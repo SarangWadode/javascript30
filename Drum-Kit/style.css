@@ -1,0 +1,37 @@
+html {
+  background: url("./background/drum-kit-background.jpeg");
+  background-size: 100vw 100vh;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  width: 10rem;
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+  transition: all 0.07s ease;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
