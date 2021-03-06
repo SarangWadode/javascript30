@@ -19,7 +19,7 @@ html {
 }
 
 .key {
-  width: 10rem;
+  width: 6rem;
   border: 0.4rem solid black;
   border-radius: 0.5rem;
   text-align: center;
@@ -34,7 +34,7 @@ html {
 
 kbd {
   display: block;
-  font-size: 4rem;
+  font-size: 2.8rem;
 }
 
 .playing {
