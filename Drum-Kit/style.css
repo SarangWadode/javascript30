@@ -1,6 +1,7 @@
 html {
   background: url("./background/drum-kit-background.jpeg");
   background-size: 100vw 100vh;
+  font-size: 10px;
 }
 body,
 html {
@@ -11,7 +12,7 @@ html {
 
 .keys {
   display: flex;
-  min-width: 100vw;
+  flex: 1;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
@@ -24,7 +25,7 @@ html {
   text-align: center;
   margin: 1rem;
   padding: 1rem 0.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
   background: rgba(0, 0, 0, 0.4);
   text-shadow: 0 0 0.5rem black;
@@ -34,4 +35,16 @@ html {
 kbd {
   display: block;
   font-size: 4rem;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
 }
