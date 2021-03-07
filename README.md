@@ -5,3 +5,4 @@ Solutions of project at [JavaScript 30](https://courses.wesbos.com/account/acces
 |  #  | Name     | Demo                                                               |
 | :-: | -------- | :----------------------------------------------------------------- |
 | 01  | Drum Kit | [Live Demo](https://sarangwadode.github.io/javascript30/Drum-Kit/) |
+| 02  | Clock    | [Live Demo](https://sarangwadode.github.io/javascript30/Clock/)    |
