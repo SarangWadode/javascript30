@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    maximum-scale=5" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <title>CSS-Variables</title>
+</head>
+
+<body>
+    <h2>Update CSS variables with <span class="h1">JS!</span></h2>
+
+    <div class="controls">
+        <label for="spacing">Spacing:</label>
+        <input id="spacing" type="range" value="10" name="spacing" min="10" max="200" data-sizing="px">
+
+        <label for="blur">Blur:</label>
+        <input id="blur" type="range" value="10" name="blur" min="0" max="25" data-sizing="px">
+
+        <label for="base">Base Color:</label>
+        <input id="base" type="color" name="base" value="#ffc600">
+    </div>
+
+    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+
+</body>
+
+<style>
+    body {
+        background: #193549;
+        color: white;
+        text-align: center;
+        font-family: 'helvetica neue', sans-serif;
+        font-size: 50px;
+        font-weight: 100;
+    }
+
+    .controls {
+        margin-bottom: 50px;
+    }
+
+    input {
+        width: 100px;
+    }
+</style>
+
+</html>
