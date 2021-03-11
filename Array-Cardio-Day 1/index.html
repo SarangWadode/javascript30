@@ -61,14 +61,35 @@
         //         return -1;
         //     }
         // });
-        const agesort = inventors.sort((a,b) => (a.year > b.year) ? 1:-1);
-        console.table(agesort);
+        const dobSort = inventors.sort((a,b) => (a.year > b.year) ? 1:-1);
+        console.table(dobSort);
 
         // Array.prototype.reduce()
         // 4. How many years did all the inventors live all together?
+        // const totalage = inventors.reduce(function(total,inventor) {
+        //     return total +inventor.passed - inventor.year;
+        // },0);
+        const totalAge = inventors.reduce((total,inventor) => {
+            return total + inventor.passed - inventor.year
+        },0);
+        console.log(totalAge)
 
         // 5. Sort the inventors by years lived
-
+        // const ageSort = inventors.sort(function(a,b) {
+        //     const aAge = a.passed - a.year;
+        //     const bAge = b.passed - b.year;
+        //     if (aAge > bAge) {
+        //         return 1;
+        //     }else {
+        //         return -1;
+        //     }
+        // });
+        const ageSort = inventors.sort((a,b) => {
+            const aAge = a.passed - a.year;
+            const bAge = b.passed - b.year;
+            return ((aAge > bAge) ? 1:-1);
+        })
+        console.log(ageSort)
         // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
         // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
