@@ -9,3 +9,4 @@ Solutions of project at [JavaScript 30](https://courses.wesbos.com/account/acces
 | 03  | CSS Variables      | [Live Demo](https://sarangwadode.github.io/javascript30/CSS-Variables/)      |
 | 04  | Array Cardio Day 1 | [Live Demo](https://sarangwadode.github.io/javascript30/Array-Cardio-Day-1/) |
 | 05  | Flex Panel Gallery | [Live Demo](https://sarangwadode.github.io/javascript30/Flex-Panel-Gallery/) |
+| 06  | Type Ahead         | [Live Demo](https://sarangwadode.github.io/javascript30/Type-Ahead/)         |
