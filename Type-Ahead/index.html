@@ -36,6 +36,10 @@
             })
         }
 
+        function numberWithCommas(val) {
+            return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        }
+
         const search = document.querySelector('.search');
         const list = document.querySelector('.suggestions');
 
@@ -50,7 +54,7 @@
                 return `
                 <li>
                     <span class="name">${cityName}, ${cityState}</span>
-                    <span class="population">${place.population}</span>    
+                    <span class="population">${numberWithCommas(place.population)}</span>    
                 </li>
                 `;
             }).join('')
@@ -58,8 +62,7 @@
         }
 
         search.addEventListener('change',displayMatches);
-        search.addEventListener('keyup',displayMatches)
-        //console.log(findMatches(('new',cities)))
+        search.addEventListener('keyup',displayMatches);
     </script>
 
 </body>
