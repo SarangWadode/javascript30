@@ -41,7 +41,20 @@
 
         function displayMatches() {
             const arrayMatches = findMatches(this.value,cities);
-            console.log(arrayMatches)
+
+            const html = arrayMatches.map(place => {
+                const regex = RegExp(this.value,'gi');
+                const cityName = place.city.replace(regex,`<span class="h1">${this.value}</span>`);
+                const cityState = place.state.replace(regex,`<span class="h1">${this.value}</span>`);
+
+                return `
+                <li>
+                    <span class="name">${cityName}, ${cityState}</span>
+                    <span class="population">${place.population}</span>    
+                </li>
+                `;
+            }).join('')
+            list.innerHTML = html;
         }
 
         search.addEventListener('change',displayMatches);
