@@ -62,5 +62,32 @@
             <p>Let's tweet our result!</p>
         </div>
     </div>
+
+    <script>
+        const inputs = document.querySelectorAll('input');
+        let lastChecked;
+
+        function handleEvent(e) {
+            //console.log(e);
+            let inBetween = false;
+            if (e.shiftKey && this.checked) {
+                inputs.forEach(input => {
+                    if (input === this || input === lastChecked) {
+                        inBetween = !inBetween;
+                        console.log('strart checking boxes in between');
+
+                    }
+
+                    if (inBetween) {
+                        input.checked = true;
+                    }
+                });
+            }
+
+            lastChecked = this;
+        }
+
+        inputs.forEach(input => input.addEventListener('click',handleEvent));
+    </script>
 </body>
 </html>

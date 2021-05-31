@@ -5,9 +5,8 @@ html {
 
 .inbox {
   max-width: 400px;
-  margin: 50px auto;
+  margin: 0 auto;
   background: #fff;
-  border-radius: 5px;
   box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
