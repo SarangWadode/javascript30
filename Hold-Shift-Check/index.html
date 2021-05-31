@@ -64,30 +64,32 @@
     </div>
 
     <script>
-        const inputs = document.querySelectorAll('input');
+        inputs = document.querySelectorAll('input');
+
         let lastChecked;
 
         function handleEvent(e) {
-            //console.log(e);
             let inBetween = false;
             if (e.shiftKey && this.checked) {
-                inputs.forEach(input => {
-                    if (input === this || input === lastChecked) {
-                        inBetween = !inBetween;
-                        console.log('strart checking boxes in between');
 
+                inputs.forEach(input => {
+                    if (this === input || lastChecked === input) {
+                        inBetween = !inBetween;                        
                     }
 
                     if (inBetween) {
                         input.checked = true;
                     }
-                });
-            }
 
-            lastChecked = this;
+                    lastChecked = this;
+                })
+            }
+            console.log(lastChecked);
         }
 
-        inputs.forEach(input => input.addEventListener('click',handleEvent));
+        inputs.forEach(input => {
+            input.addEventListener('click',handleEvent);
+        })
     </script>
 </body>
 </html>
