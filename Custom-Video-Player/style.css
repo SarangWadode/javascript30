@@ -14,7 +14,7 @@ body {
   padding: 0;
   display: flex;
   min-height: 100vh;
-  background: linear-gradient(135deg, #d446b5 25%, #399156 48%, #dbd13a 100%);
+  background: rgb(236, 236, 236);
   background-size: cover;
   align-items: center;
   justify-content: center;
@@ -23,21 +23,33 @@ body {
 .player {
   max-width: 750px;
   border: 5px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(107, 67, 67, 0.2);
   position: relative;
   font-size: 0;
+  background: rgb(29, 29, 138);
   overflow: hidden;
+  border-radius: 15px;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  background: rgb(36, 50, 129);
+  border-radius: 5%;
 }
 
 .progress {
-  height: 10px;
+  margin: 3px;
+  height: 5px;
   width: 100%;
-  background: rgb(214, 127, 127);
+  background: rgb(158, 152, 158);
   position: relative;
+  border-radius: 5%;
 }
 
 .progress_filled {
   width: 0;
-  height: 10px;
-  background: cornsilk;
+  height: 5px;
+  background: rgb(224, 87, 46);
+  border-radius: 5%;
 }
