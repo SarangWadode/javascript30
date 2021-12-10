@@ -20,7 +20,6 @@ function skip() {
 }
 
 function sliding(e) {
-    console.log(e.target.name)
     if(e.target.name === 'volume') {
         video.volume = e.target.value;
     }
@@ -32,7 +31,6 @@ function sliding(e) {
 function videoStatus() {
     progressFilled.style.width = `${(video.currentTime / video.duration)*100}%`;
 }
-
 
 document.querySelector('[name=playbackRate]').value = video.playbackRate
 document.querySelector('[name=volume]').value = video.volume

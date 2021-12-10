@@ -33,9 +33,24 @@ body {
 
 .panel {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   background: rgb(36, 50, 129);
   border-radius: 5%;
+}
+
+.player__button {
+  width: 50px;
+  border-radius: 10px;
+  background: rgb(80, 229, 255);
+}
+
+.toggle {
+  padding-right: 17px;
+  width: 25px;
+  text-align: center;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(80, 229, 255);
 }
 
 .progress {
