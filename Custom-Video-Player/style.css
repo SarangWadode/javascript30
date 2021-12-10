@@ -6,6 +6,7 @@ html {
 *:before,
 *:after {
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -26,4 +27,17 @@ body {
   position: relative;
   font-size: 0;
   overflow: hidden;
+}
+
+.progress {
+  height: 10px;
+  width: 100%;
+  background: rgb(214, 127, 127);
+  position: relative;
+}
+
+.progress_filled {
+  width: 0;
+  height: 10px;
+  background: cornsilk;
 }
