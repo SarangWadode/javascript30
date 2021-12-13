@@ -1,6 +1,6 @@
 const addItems = document.querySelector('.add-items');;
 const itemsList = document.querySelector('.plates');
-const items = [];
+const items = JSON.parse(localStorage.getItem('items')) || [];
 
 function addItem(e) {
     e.preventDefault();
@@ -12,7 +12,7 @@ function addItem(e) {
     items.push(item);
     //console.log(items);
     renderItems(items,itemsList);
-    localStorage.setItem('items',items);
+    localStorage.setItem('items',JSON.stringify(items));
     this.reset();
 }
 
@@ -24,6 +24,19 @@ function renderItems(plates = [], platesList) {
         </li>`
     });
     platesList.innerHTML = asach.join(' ')
-    // console.log(asach.join(' '));
 }
+
+function toggleCheck(e) {
+    if (!e.target.matches('input')) {return}
+    const el = e.target;
+    const index = el.dataset.index;
+    items[index].checked = !(items[index].checked);
+    localStorage.setItem('items',JSON.stringify(items));
+    renderItems(items,itemsList);
+    console.log(items[index].checked)
+}
+
 addItems.addEventListener('submit', addItem);
+itemsList.addEventListener('click', toggleCheck);
+renderItems(items,itemsList);
+const inputs = document.querySelectorAll('input');
