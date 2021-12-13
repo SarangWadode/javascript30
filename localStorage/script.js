@@ -10,7 +10,20 @@ function addItem(e) {
         checked: false
     }
     items.push(item);
-    console.log(items);
+    //console.log(items);
+    renderItems(items,itemsList);
+    localStorage.setItem('items',items);
     this.reset();
+}
+
+function renderItems(plates = [], platesList) { 
+    const asach = plates.map((plate,index) => {
+        return `<li>
+        <input data-index="${index}" id='item${index}' type="checkbox" ${plate.checked ? 'checked': ""}>
+        <label for='item${index}'>${plate.text}</label>
+        </li>`
+    });
+    platesList.innerHTML = asach.join(' ')
+    // console.log(asach.join(' '));
 }
 addItems.addEventListener('submit', addItem);
