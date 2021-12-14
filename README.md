@@ -19,3 +19,4 @@ Solutions of project at [JavaScript 30](https://courses.wesbos.com/account/acces
 | 13  | Slide in on Scroll     | [Live Demo](https://sarangwadode.github.io/javascript30/slide-in-on-scroll/)     |
 | 14  | Objects and Arrays     | [Live Demo](https://sarangwadode.github.io/javascript30/object-and-arrays/)      |
 | 15  | Local Storage          | [Live Demo](https://sarangwadode.github.io/javascript30/localStorage)            |
+| 16  | Mouse Move Shadow      | [Live Demo](https://sarangwadode.github.io/javascript30/mouse-move-shadow)       |
