@@ -20,3 +20,5 @@ Solutions of project at [JavaScript 30](https://courses.wesbos.com/account/acces
 | 14  | Objects and Arrays     | [Live Demo](https://sarangwadode.github.io/javascript30/object-and-arrays/)      |
 | 15  | Local Storage          | [Live Demo](https://sarangwadode.github.io/javascript30/localStorage)            |
 | 16  | Mouse Move Shadow      | [Live Demo](https://sarangwadode.github.io/javascript30/mouse-move-shadow)       |
+| 17  | WebCam Fun             | [Live Demo](https://sarangwadode.github.io/javascript30/webcam-fun)              |
+| 18  | Speech Recognition     | [Live Demo](https://sarangwadode.github.io/javascript30/speech-recognition)      |
