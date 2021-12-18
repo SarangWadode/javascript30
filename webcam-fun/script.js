@@ -5,13 +5,39 @@ const strip = document.querySelector('.strip');
 const snap = document.querySelector('.snap');
 
 function getVideo() {
-    const mediaStream = new MediaStream();
-    console.log(mediaStream);
-    video.src = mediaStream;
-    // navigator.mediaDevices.getUserMedia({video: true, audio: false})
-    // .then(localMediaStream => {
-    //     const MediaStream
-    //     video.src = window.URL.createObjectURL(localMediaStream);
-    // })
+    navigator.mediaDevices.getUserMedia({video: true, audio: false})
+    .then(localMediaStream => {
+        video.srcObject = localMediaStream;
+        video.play();
+    })
+    .catch(err => {
+        console.log("Opps! It looks you've not given the video access😢",err)
+    })
 }
+
+function paintToCanvas() {
+    const width = video.videoWidth;
+    const height = video.videoHeight;
+    canvas.width = width;
+    canvas.height = height;
+
+    return setInterval(() => {
+        ctx.drawImage(video,0,0,width,height);
+    },15)
+}
+
+function snapPhoto() {
+    snap.play();
+    snap.currentTime = 0;
+
+    const data = canvas.toDataURL('image/jpeg');
+    const link = document.createElement('a');
+    link.href = data;
+    link.setAttribute('download','handsomeboy')
+    link.textContent = "Download Image"
+    strip.insertBefore(link,strip.firstChild);
+}
+
+video.addEventListener('canplay',paintToCanvas);
+
 getVideo();
