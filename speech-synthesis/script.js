@@ -4,3 +4,5 @@ const msg = new SpeechSynthesisUtterance();
   const options = document.querySelectorAll('[type="range"], [name="text"]');
   const speakButton = document.querySelector('#speak');
   const stopButton = document.querySelector('#stop');
+
+  
