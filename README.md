@@ -1,6 +1,13 @@
 # JavaScript 30
 
-Solutions of project at [JavaScript 30](https://courses.wesbos.com/account/access/5fec20de3a75762422aab859/view/194130650)
+[![wakatime](https://wakatime.com/badge/github/SarangWadode/javascript30.svg)](https://wakatime.com/badge/github/SarangWadode/javascript30)
+
+[![GitHub commits](https://badgen.net/github/commits/Naereen/Strapdown.js)](https://github.com/SarangWadode/javascript30/commits)
+
+[![Open in VSCode](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/github.com/SarangWadode/javascript30)
+
+These are the solutions for Project problems at [JavaScript 30](https://courses.wesbos.com/account/access/5fec20de3a75762422aab859/view/194130650) \
+Click on **Live Demo** to go to Project URL
 
 |  #  | Name                                   | Demo                                                                                              |
 | :-: | -------------------------------------- | :------------------------------------------------------------------------------------------------ |
@@ -31,3 +38,6 @@ Solutions of project at [JavaScript 30](https://courses.wesbos.com/account/acces
 | 25  | Event Capture Propagation and Bubbling | [Live Demo](https://sarangwadode.github.io/javascript30/event-captured-propagation-bublling-once) |
 | 26  | Stripe follow along Nav                | [Live Demo](https://sarangwadode.github.io/javascript30/stripe-follow-along-nav)                  |
 | 27  | Click and Drag                         | [Live Demo](https://sarangwadode.github.io/javascript30/click-and-drag)                           |
+| 28  | Video Speed Controller                 | [Live Demo](https://sarangwadode.github.io/javascript30/video-speed-controller)                   |
+| 29  | Countdown Timer                        | [Live Demo](https://sarangwadode.github.io/javascript30/countdown-timer)                          |
+| 30  | Whack a Mole                           | [Live Demo](https://sarangwadode.github.io/javascript30/whack-a-mole)                             |
